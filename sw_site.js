@@ -4,7 +4,7 @@ let staticCacheName = 'PWA-v3';
 // Default files to always cache
 let cacheFiles = [
   './',
-  './index.php',
+  './index.html',
   './assets',
   './accounts'
 ]
