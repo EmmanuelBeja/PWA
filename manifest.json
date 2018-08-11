@@ -5,7 +5,7 @@
 "display": "standalone",
 "background_color": "#fff",
 "theme_color": "black",
-"description": "A simple Progressive web app.",
+"description": "The world of wolves.",
 "icons": [{
   "src": "assets/img/touch/homescreen48.png",
   "sizes": "48x48",
@@ -21,10 +21,6 @@
 }, {
   "src": "assets/img/touch/homescreen144.png",
   "sizes": "144x144",
-  "type": "image/png"
-}, {
-  "src": "assets/img/touch/homescreen168.png",
-  "sizes": "168x168",
   "type": "image/png"
 }, {
   "src": "assets/img/touch/homescreen192.png",
