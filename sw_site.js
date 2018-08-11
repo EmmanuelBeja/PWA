@@ -53,7 +53,7 @@ self.addEventListener('fetch', (event) => {
           let requestClone = event.request.clone();
           return fetch(requestClone).then((response) => {
               if ( !response ) {
-                console.log("[ServiceWorker] No response from fetch ")
+                console.log("[ServiceWorker] No response from fetch ");
                 //return response;
               }
               let responseClone = response.clone();
@@ -66,9 +66,8 @@ self.addEventListener('fetch', (event) => {
               //response = responseClone;
               return response;
               }) // end caches.open
-            })
+          })
       }
-
     }) // end caches.match(event.request)
 
   event.respondWith(
@@ -81,6 +80,7 @@ self.addEventListener('fetch', (event) => {
 
 //fetch resources from the cache
 function fromCache(request) {
+  console.log('[ServiceWorker] fetch from cache.');
   return caches.open(staticCacheName).then(function (cache) {
     return cache.match(request).then(function (response) {
       return response || Promise.reject('no-match');
@@ -90,7 +90,7 @@ function fromCache(request) {
 
 //fetching from the network. Incase too slow, fetch from cache
 function fromNetwork(request, timeout) {
-
+  console.log('[ServiceWorker] fetch from network.');
   return new Promise((fulfill, reject) => {
       //Reject in case of timeout.
       var timeoutId = setTimeout(reject, timeout);
