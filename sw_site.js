@@ -4,9 +4,7 @@ let staticCacheName = 'PWA-v2';
 // Default files to always cache
 let cacheFiles = [
   './',
-  './index.html',
-  './assets',
-  './accounts'
+  './index.html'
 ]
 
 //install the service worker
