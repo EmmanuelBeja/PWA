@@ -1,5 +1,5 @@
 
-let staticCacheName = 'PWA-v3';
+let staticCacheName = 'PWA-v1';
 
 // Default files to always cache
 let cacheFiles = [
